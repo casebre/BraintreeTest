@@ -18,7 +18,6 @@ public class BraintreeBrowserSwitchActivity extends AppCompatActivity {
         try {
             String mAuthorization = "";
             mBraintreeFragment = BraintreeFragment.newInstance(this, mAuthorization);
-            // mBraintreeFragment is ready to use!
         } catch (InvalidArgumentException e) {
             // There was an issue with your authorization string.
         }
